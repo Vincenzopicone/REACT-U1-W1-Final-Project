@@ -57,10 +57,17 @@ footer {
   font-size: 0.6em;
 }
 
-.col img {
-  transition: transform 0.2s;
+.CardFilm {
+  cursor: pointer;
 }
 
-.col img:hover {
+.CardFilm img {
+  transition: transform 0.2s;
+  border-radius: 30px;
+  height: 200px;
+  width: 160px;
+}
+
+.CardFilm img:hover {
   transform: scale(1.1);
 }
