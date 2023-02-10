@@ -1,7 +1,6 @@
 import Container from "./Container";
 import { Component } from "react";
 import Galleria from "./Galleria";
-
 import Section from "./Section";
 
 
