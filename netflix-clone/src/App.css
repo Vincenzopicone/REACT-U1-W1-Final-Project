@@ -58,21 +58,19 @@ footer {
 }
 
 .CardFilm {
-  cursor: pointer;
-  background-color: black;
-  border-radius: 30px;
-  color: white;
-  
+  cursor: pointer; 
 }
 
 .CardFilm img {
   transition: transform 0.2s;
-  border-radius: 30px;
-  height: 200px;
-  width: 160px;
- 
 }
 
 .CardFilm:hover {
   transform: scale(1.1);
+}
+
+.CardBody {
+  font-size: 0.9em;
+  color: white;
+  background-color: black;
 }

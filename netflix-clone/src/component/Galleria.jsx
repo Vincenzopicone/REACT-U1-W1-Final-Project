@@ -1,7 +1,8 @@
 import { Component } from "react";
-import { Image } from "react-bootstrap";
+/* import { Image } from "react-bootstrap"; */
+import CardFilm from "./CardFilm";
 
-class Galleria1 extends Component {
+class Galleria extends Component {
     state = {
         Search:[]
     }
@@ -30,18 +31,10 @@ class Galleria1 extends Component {
         return (
             <div className="d-flex justify-content-evenly align-items-center flex-wrap">
           {this.state.Search.filter(film=> film.Type==="movie" && film.Year > 2000)
-          .map(film => (
-          <div className="CardFilm col-sm-6 col-md-3 col-lg-2 mb-3 px-1" >
-            <Image className="img-fluid" src={film.Poster} alt={"alt"} />
-            <div className="text-center">
-                <h6>{film.Title} </h6>
-                <h6>{film.Year}</h6>
-            </div>
-          </div>
-        ))}
+          .map(film => ( <CardFilm img={film.Poster} title={film.Title} year={film.Year} /> ))}        
         </div>)
         
     }
 };
 
-export default Galleria1;
+export default Galleria;
