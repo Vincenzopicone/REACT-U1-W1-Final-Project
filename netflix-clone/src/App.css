@@ -59,6 +59,10 @@ footer {
 
 .CardFilm {
   cursor: pointer;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  
 }
 
 .CardFilm img {
@@ -66,8 +70,9 @@ footer {
   border-radius: 30px;
   height: 200px;
   width: 160px;
+ 
 }
 
-.CardFilm img:hover {
+.CardFilm:hover {
   transform: scale(1.1);
 }
