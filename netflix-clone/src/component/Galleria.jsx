@@ -31,7 +31,7 @@ class Galleria extends Component {
         return (
             <div className="d-flex justify-content-evenly align-items-center flex-wrap">
           {this.state.Search.filter(film=> film.Type==="movie" && film.Year > 2000)
-          .map(film => ( <CardFilm img={film.Poster} title={film.Title} year={film.Year} /> ))}        
+          .map(film => ( <CardFilm key={film.imdbID} img={film.Poster} title={film.Title} year={film.Year} imdbID={film.imdbID} /> ))}        
         </div>)
         
     }
